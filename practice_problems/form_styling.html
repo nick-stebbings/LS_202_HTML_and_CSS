@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Tables 2</title>
+    <meta charset="utf-8" />
+    <style>
+    body {
+      font: normal 14px Helvetica, Arial, sans-serif;
+    }
+     dt {
+      padding-bottom: 20px;
+    }
+    dd {
+      padding-bottom: 20px;
+      margin: 0; 
+    }
+    dl {
+      vertical-align: top;
+      padding-bottom: 20px;
+    }
+    select {
+      width: 100%;
+      height: 40px;
+      box-sizing: border-box;
+      padding: 0 10px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      border: 1px solid #cecece;
+      background: white;
+      border-radius: 4px;
+    }
+    input[type="text"] {
+      width: 100%;
+      height: 40px;
+      padding: 0 8px;
+      font: normal 14px Helvetica, Arial, sans-serif;
+      border: 1px solid #cecece;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    input[type="text"] ~ input[type="text"] {
+      margin-top: 10px;
+    }
+    dl.partial {
+      display: inline-block;
+      padding-right: 20px;
+      box-sizing: border-box;
+    }
+    dl.city {
+      width: 50%;
+    }
+    dl.state {
+      width: 25%;
+    }
+    dl.zipcode {
+      width: 25%;
+      padding-right: 0;
+    }
+    </style>
+  </head>
+  <body>
+    <form action="" method="POST">
+      <dl>
+        <dt>
+          <label for="name">Your Name</label>
+        </dt>
+        <dd>
+          <input type="text" name="name" id="name" />
+        </dd>
+      </dl>
+
+      <dl>
+        <dt>
+          <label for="address1">Your Address</label>
+        </dt>
+        <dd>
+          <input type="text" name="address1" id="address1" />
+          <input type="text" name="address2" id="address2" />
+        </dd>
+      </dl><!-- 
+  --><dl class="partial city">
+        <dt>
+          <label for="city">City</label>
+        </dt>
+        <dd>
+          <input type="text" name="city" id="city" />
+        </dd>
+     </dl><!-- 
+  --><dl class="partial state">
+        <dt>
+          <label for="state">State</label>
+        </dt>
+        <dd>
+          <select id="state" name="state">
+            <option value="">AK</option>
+            <option value="">AL</option>
+          </select>
+        </dd>
+      </dl><!-- 
+  --><dl class="partial zipcode">
+        <dt>
+          <label for="zipcode">Zipcode</label>
+        </dt>
+        <dd>
+          <input type="text" name="zipcode" id="zipcode" />
+        </dd>
+      </dl>
+    </form>
+  </body>
+</html>

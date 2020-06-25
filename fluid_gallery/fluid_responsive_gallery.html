@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Image Gallery</title>
+    <style>
+      body,
+      figure,
+      figcaption {
+        margin: 0;
+        padding: 0;
+        color: white;
+      }
+
+      body {
+        box-sizing: border-box;
+        background-color: #0c0c0c;
+        font-size: 16px;
+        font-family: Helvetica, Arial, sans-serif;
+      }
+
+      h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 2rem;
+        font-weight: 700;
+      }
+
+      img {
+        box-sizing: border-box;
+      }
+
+      figcaption {
+        padding-top: 10px;
+      }
+      
+      main {
+        background-color: #2f2f2f;
+        margin: 0 auto;
+        max-width: 1000px;
+        overflow: hidden; /* creates a new block formatting context */
+        /* min-width: 500px; */
+        padding: 20px;
+      }
+
+      .main-image {
+        display: block;
+        border: 20px solid white;
+        width: 100%;
+      }
+
+
+      .thumbnail-image {
+        display: block;
+        border: 3px solid white;
+        width: 100%;
+      }
+
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -20px;
+        padding: 0;
+        justify-content: space-between;
+      }
+      li {
+        color: white;
+        list-style-type: none;
+        padding: 20px 0 0 20px;
+        flex: 1 1 23%;
+      }
+
+      @media screen and (max-width: 899px) {
+        li {
+          max-width: 30%;
+          flex-basis: 28%;
+        }
+      }
+
+      @media screen and (max-width: 599px) {
+        li {
+          max-width: 45%;
+          flex-basis: 43%;
+      }
+      }
+      @media screen and (min-width: 1280px) {
+  main {
+    max-width: 100%;
+  }
+
+  figure {
+    display: inline-block;
+    float: left;
+    margin-right: 50px;
+    vertical-align: top;
+    width: 950px;
+  }
+
+  ul {
+    overflow: hidden;
+  }
+
+  li {
+    width: 100%;
+  }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>My Photo Gallery</h1>
+      <figure>
+        <img src="placeholder.png" class="main-image" alt="this is a placeholder" />
+        <figcaption>This is an example image.</figcaption>
+      </figure>
+      
+      <footer>
+        <ul>
+        <li><img src="placeholder.png" class="thumbnail-image" alt="this is a placeholder" /></li>
+        <li><img src="placeholder.png" class="thumbnail-image" alt="this is a placeholder" /></li>
+        <li><img src="placeholder.png" class="thumbnail-image" alt="this is a placeholder" /></li>
+        <li><img src="placeholder.png" class="thumbnail-image" alt="this is a placeholder" /></li>
+        <li><img src="placeholder.png" class="thumbnail-image" alt="this is a placeholder" /></li>
+        <li><img src="placeholder.png" class="thumbnail-image" alt="this is a placeholder" /></li>
+        <li><img src="placeholder.png" class="thumbnail-image" alt="this is a placeholder" /></li>
+        <li><img src="placeholder.png" class="thumbnail-image" alt="this is a placeholder" /></li>
+      </ul>
+      </footer>
+    </main>
+  </body>
+  </body>
+</html>

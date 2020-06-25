@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font: normal 24px Helvetica, Arial, sans-serif;
+}
+
+header, h1 {
+  background-color: blue;
+  color: white;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  list-style-type: none;
+}
+
+li {
+  text-align: center;
+}
+
+a {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 1rem 0;
+  text-decoration: none;
+  width: 100%;
+}
+
+a:focus,
+a:hover {
+  background-color: blue;
+  color: yellow;
+}
+
+article,
+aside {
+  padding: 0 1rem;
+}
+
+body {
+  display: grid;
+  grid-auto-rows: min-content;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-areas: 
+        "header header header"
+        "navbar navbar navbar"
+        "aside1 artic1 aside2"
+        "aside3 artic2 artic2"
+        "footer footer footer";
+}
+
+aside {
+  background-color: lightgreen;
+}
+
+header {
+  padding: 1rem;
+  text-align: center;
+  grid-area: header;
+}
+
+nav {
+  background-color: cyan;
+  grid-area: navbar;
+}
+
+#article-1 {
+  grid-area: artic1;
+  
+}
+
+#article-2 {
+  grid-area: artic2;
+  background-color: skyblue;
+}
+
+#aside-1 {
+  grid-area: aside1;
+  
+}
+#aside-2 {
+  grid-area: aside2;
+  
+}
+#aside-3 {
+  background-color: pink;
+  grid-area: aside3;
+}
+
+footer {
+  background-color: yellow;
+  grid-area: footer;
+
+  display: grid;
+  grid-template-columns: 25% auto;
+  grid-template-areas:
+    "logo copyright";
+}
+
+p {
+margin: 1rem 0;
+}
+
+#copyright {
+  margin: 0 1rem;
+  grid-area: copyright;
+  align-self: center;
+  justify-self: end;
+}
+
+#logo {
+  grid-area: logo;
+  background-color: orange;
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}

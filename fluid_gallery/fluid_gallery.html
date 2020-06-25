@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Image Gallery</title>
+    <style>
+      body,
+      figure,
+      figcaption {
+        margin: 0;
+        padding: 0;
+        color: white;
+      }
+
+      body {
+        box-sizing: border-box;
+        background-color: #0c0c0c;
+        font-size: 16px;
+        font-family: Helvetica, Arial, sans-serif;
+      }
+
+      h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 2rem;
+        font-weight: 700;
+      }
+
+      figcaption {
+        padding-top: 10px;
+      }
+      
+      main {
+        background-color: #2f2f2f;
+        margin: 0 auto;
+        max-width: 1000px;
+        overflow: hidden; /* creates a new block formatting context */
+        min-width: 500px;
+        padding: 20px;
+      }
+
+      .main-image {
+        display: block;
+        border: 20px solid white;
+        width: 100%;
+      }
+
+      footer {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+      }
+
+      .thumbnail-image {
+        display: block;
+        max-width: 23%;
+        border: 3px solid white;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>My Photo Gallery</h1>
+      <figure>
+        <img src="placeholder.png" class="main-image" alt="this is a placeholder" />
+        <figcaption>This is an example image.</figcaption>
+      </figure>
+      
+      <footer>
+        <img src="placeholder.png" class="thumbnail-image" alt="this is a placeholder" />
+        <img src="placeholder.png" class="thumbnail-image" alt="this is a placeholder" />
+        <img src="placeholder.png" class="thumbnail-image" alt="this is a placeholder" />
+        <img src="placeholder.png" class="thumbnail-image" alt="this is a placeholder" />
+      </footer>
+    </main>
+  </body>
+  </body>
+</html>

@@ -6,30 +6,29 @@
     <style>
       /* Reset, Layout, General Fonts */
       html {
-        font-size: 10px;
+        font-size: 14px;
       }
 
       body,
       main {
         margin: 0;
         padding: 0;
-        font-family: Helvetica, "Arial Narrow", sans-serif;
+        font-family: Helvetica, Arial, sans-serif;
       }
 
       article {
         border: 3px solid black;
         box-sizing: border-box;
         margin: 1rem;
-        padding: 1rem;
-        width: 50rem;
+        padding: 0.65rem;
+        width: 680px;
       }
 
       table {
         border-collapse: collapse;
         table-layout: fixed;
         width: 100%;
-        font-family: Helvetica, "Arial Narrow", sans-serif;
-        font-size: 2rem;
+        font-size: 2.4rem;
       }
 
       dl,
@@ -51,20 +50,24 @@
       h1,
       tbody > [scope="row"],
       thead > tr dt {
-        font-family: "Helvetica Black", Arial, sans-serif;
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        font-size: 2.4rem;
       }
 
       h1 {
         margin: 0;
-        font-size: 6.4rem;
+        font-size: 5.4rem;
         line-height: 4.5rem;
+        font-weight: 900;
+        letter-spacing: 0.17rem;
       }
 
       h2 {
-        font-size: 2.5rem;
+        font-size: 2.4rem;
         font-weight: 100;
-        line-height: 2rem;
-        margin: 0.9rem 0;
+        line-height: 1.8rem;
+        margin: 1rem 0;
       }
 
       /*-- footer information */
@@ -88,7 +91,7 @@
       /*-- font weights*/
       thead > tr > td:first-child dt,
       table:first-of-type tbody td {
-        font-weight: bolder;
+        font-weight: 900;
       }
 
       table:first-of-type tbody dd,
@@ -110,6 +113,9 @@
       table:first-of-type > thead th:only-child,
       [scope="row"] {
         text-align: left;
+        line-height: 3.2rem;
+        font-weight: 900;
+        font-size: 1.8rem;
       }
 
       table:first-of-type [scope="col"],
@@ -157,8 +163,8 @@
 
       /*-- main horizontal rules */
       table:first-of-type thead {
-        border-top-width: 1.8rem;
-        border-bottom-width: 0.8rem;
+        border-top-width: 28px;
+        border-bottom-width: 14px;
       }
 
       table:first-of-type tfoot {
@@ -197,7 +203,7 @@
         <!-- Main Table -->
         <table>
           <!-- Per Serving Summary -->
-          <thead class="serving-summary">
+          <thead>
             <tr>
               <th scope="col" colspan="2">Amount Per Serving</th>
             </tr>

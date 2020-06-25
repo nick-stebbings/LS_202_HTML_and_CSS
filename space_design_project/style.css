@@ -1,0 +1,194 @@
+/*
+----------------------------------------
+Tantek Celik's Whitespace Reset
+     Author:    Tantek Celik, Shane Riley
+    Version:    (CC) 2010 Some Rights Reserved - http://creativecommons.org/licenses/by/2.0
+Description:  Resets default styling of browsers to a common base
+----------------------------------------
+*/
+
+ul, ol { list-style: none; }
+h1, h2, h3, h4, h5, h6, pre, code { font-size: 1em; }
+ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote,
+fieldset, input, dl, dt, dd, figure, figcaption {
+  margin: 0;
+  padding: 0;
+}
+a img, :link img, :visited img, fieldset { border: none; }
+address { font-style: normal; }
+header, section, article, nav, footer, hgroup, details, summary, figure, main {
+  display: block;
+}
+mark {
+  color: inherit;
+  background-color: transparent;
+}
+abbr { border: none; }
+summary::-webkit-details-marker { display: none; }
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* General layout, fonts etc. */
+
+body {
+  background: #2f2840 url("images/bg_body.gif");
+  background-position-x: 160px;
+  font: 100 20px 'Avenir LT Std', 'Nunito Sans', Helvetica, sans-serif;
+  color: #000;
+  text-align: center;
+}
+
+header {
+  height: 570px;
+  padding-top: 132px;
+}
+
+main {
+  background-color: white;
+  padding: 114px 80px 25px 80px;
+  width: 100%;
+}
+
+h1,
+h2,
+nav a,
+footer p {
+  font-family: "Avenir Ltd 65 Medium", "Nunito Sans", Helvetica, sans-serif;
+  font-weight: 800;
+}
+
+nav {
+  margin-left: -5px;
+}
+
+h1 {
+  margin-bottom: 28px;
+  font-size: 36px;
+}
+
+h2 {
+  margin-bottom: 8px;
+  color: #3e59b2;
+  font-size: 1.5rem;
+}
+p {
+  padding: 0 20%;
+  margin: 0 0 58px 0;
+  line-height: 1.8rem;
+}
+
+/* Navigation */
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  padding-top: 115px;
+  width: 100%;
+}
+
+nav ul li {
+  flex: 0 0 11rem;
+}
+
+nav > ul > li > a {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #cacaca;
+  text-decoration: none;
+  letter-spacing: 0.03rem;
+}
+
+nav > ul > li.active a {
+  font-weight: 900;
+  color: #6db9ff;
+}
+
+/* Footer */
+
+footer {
+  background-color: #e7e7e7;
+  min-height: 300px;
+  padding: 88px 0 75px 0;
+  color: #b2b2b2;
+}
+
+footer img {
+  flex: 0 0 50px;
+  height: 50px;
+  width: 50px;
+}
+
+footer ul {
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-around;
+  width: 680px;
+}
+
+footer p {
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Sprite images for Social Media */
+a.sm-link {
+  width: 46px;
+  height: 46px;
+  background: url("images/icons_social-media.png") no-repeat;
+  display: inline-block;
+}
+
+footer li {
+  flex: 1;
+}
+
+footer li:nth-child(2) a { background-position: 0 -46px; }
+
+footer li:nth-child(3) a { background-position: 0 -92px; }
+
+footer li:nth-child(4) a { background-position: 0 -138px; }
+
+
+/* Specific page properties */
+
+#projects figure {
+  padding: 0 0 55px 0;
+}
+
+#projects figure img {
+  display: block;
+  margin: 0 auto;
+}
+
+#team p {
+  padding: 0 120px 120px 120px;
+}
+
+#team ul {
+  padding: 0 0 225px 0;
+}
+
+#team li {
+  display: inline-block;
+  padding: 0 30px;
+  font-size: 24px;
+}
+
+#team li a {
+  text-decoration: none;
+  color: #3e59b2;
+}
+
+#team li img {
+  display: block;
+  margin: 0 0 25px 0;
+}
